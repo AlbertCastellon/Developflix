@@ -8,26 +8,44 @@ const urlBase = 'https://image.tmdb.org/t/p/w500';
 
 for(let i = 0; i < peliculas.length; i++) {
     if(peliculas[i].genre_ids.some((element) => element === 28)) {
-    const img = document.createElement("img")
-    img.src = `https://image.tmdb.org/t/p/w500${peliculas[i].backdrop_path}`;
-    const title = document.createTextNode(peliculas[i].title);
-    accion.appendChild(img);
-    accion.appendChild(title);
+        const div = document.createElement("div");
+        const img = document.createElement("img")
+        img.src = `https://image.tmdb.org/t/p/w500${peliculas[i].poster_path}`;
+        const title = document.createElement("h3");
+        title.innerHTML = peliculas[i].title;
+        div.class = 'pelicula';
+        div.id = title;
+        div.appendChild(img);
+        div.appendChild(title);
+        accion.appendChild(div);
+        
 }}
 for(let i = 0; i < peliculas.length; i++) {
     if(peliculas[i].genre_ids.some((element) => element === 53)) {
-    const img = document.createElement("img")
-    img.src = `https://image.tmdb.org/t/p/w500${peliculas[i].backdrop_path}`;
-    const title = document.createTextNode(peliculas[i].title);
-    thriller.appendChild(img);
-    thriller.appendChild(title);
+        const div = document.createElement("div");
+        const img = document.createElement("img")
+        img.src = `https://image.tmdb.org/t/p/w500${peliculas[i].poster_path}`;
+        const title = document.createElement("h3");
+        title.innerHTML = peliculas[i].title;
+        div.class = 'pelicula';
+        div.id = title;
+        div.appendChild(img);
+        div.appendChild(title);
+        thriller.appendChild(div);
+        
 }}
 for(let i = 0; i < peliculas.length; i++) {
     if(peliculas[i].genre_ids.some((element) => element === 12)) {
-    const img = document.createElement("img")
-    img.src = `https://image.tmdb.org/t/p/w500${peliculas[i].backdrop_path}`;
-    const title = document.createTextNode(peliculas[i].title);
-    aventura.appendChild(img);
-    aventura.appendChild(title);
+        const div = document.createElement("div");
+        const img = document.createElement("img")
+        img.src = `https://image.tmdb.org/t/p/w500${peliculas[i].poster_path}`;
+        const title = document.createElement("h3");
+        title.innerHTML = peliculas[i].title;
+        div.class = 'pelicula';
+        div.id = title;
+        div.appendChild(img);
+        div.appendChild(title);
+        aventura.appendChild(div);
+
 }}
    
